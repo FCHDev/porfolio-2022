@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Card.css";
 import githublogo from "../assets/logos/github.png";
 import { motion } from "framer-motion";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Card = ({
   name,
@@ -50,7 +50,7 @@ const Card = ({
 
   return (
     <motion.li
-      className="card"
+      className="card-project"
       initial="initial"
       animate="visible"
       exit="exit"
@@ -74,7 +74,7 @@ const Card = ({
         <h2 style={{ paddingBottom: "5px" }}>{name}</h2>
         <p>{description}</p>
         <br />
-        <p>
+        <p style={{paddingBottom:"1em"}}>
           {api}
           <br />
           <a href={apiUrl} rel="noopener noreferrer" target="_blank">
@@ -83,7 +83,7 @@ const Card = ({
         </p>
         <h3>
           <a href={url} rel="noopener noreferrer" target="_blank">
-            Accès au projet
+              <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>Accès au projet
           </a>
         </h3>
         {git ? (

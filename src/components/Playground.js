@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, {useEffect} from "react";
 import { portfoliodb } from "../datas/portfoliodb";
-import "../styles/Playground.css";
 import Card from "./Card";
-import Selector from "./Selector";
 
 const Playground = () => {
-  const [display, setDisplay] = useState(
+  const display =
     <div className="playground">
       {portfoliodb
         .sort((a, b) => b.name - a.name)
@@ -43,16 +41,19 @@ const Playground = () => {
           )
         )}
     </div>
-  );
+
+
   function SortArray(x, y) {
     return x.name.localeCompare(y.name);
   }
+  useEffect(() => {
+      portfoliodb.sort(SortArray);
+  }, [])
 
-  portfoliodb.sort(SortArray);
+
 
   return (
     <>
-      <Selector setDisplay={setDisplay} />
       {display}
     </>
   );

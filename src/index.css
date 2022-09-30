@@ -1,13 +1,489 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    scroll-behavior: smooth;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.navigation {
+    padding-top: 1em;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.navigation a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: #f1f1f1;
+    transition: width 0.2s ease-in-out;
+}
+.navigation a:hover::after {
+    width: 100%;
+}
+.navigation span {
+    font-size: 1.3em;
+}
+
+.profil-pic {
+    margin-bottom: 1em;
+}
+
+.profil-pic img {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    max-width: 200px;
+    height: auto;
+}
+
+#profile-title {
+    margin: 0;
+}
+
+.section1, .section2, .section3, .section4 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 1em;
+    position: relative;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Open Sans', serif;
+    font-size: 1.2em;
+}
+
+.section1 h1,
+.section2 h1,
+.section3 h1,
+.section4 h1 {
+    font-size: 2.8em;
+    padding: 1.3em 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section1 h2,
+.section2 h2,
+.section3 h2,
+.section4 h2 {
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section1 {
+    background: linear-gradient(180deg, rgba(9,9,9,0.15172006302521013) 0%, rgba(0,0,0,0.9164259453781513) 25%);
+    /*background-color: rgba(0,0,0,0.5);*/
+}
+
+.section2 {
+    background-color: #2A9D8F;
+}
+
+.section3 {
+    background-color: #577590;
+}
+
+.section4 {
+    background-color: #E76F51;
+}
+
+.section1 span {
+    margin-top: 0.5em;
+}
+
+
+/*SPEECH*/
+.speech {
+    width: 60%;
+    margin: 3em 0;
+}
+.speech p {
+    margin: 1em 0 2em 0;
+}
+.speech h3 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+.logos-competences {
+    width: auto;
+    height: 5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #dee2e6;
+    border-radius: 7px;
+    margin: 1em auto;
+    color: #264653;
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+.logo-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logos-competences img {
+    max-height: 3.6em;
+}
+
+.logos-competences img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: 0.3s ease-out;
+}
+
+
+/*PLAYGROUND*/
+.playground {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 65vh;
+    overflow: hidden;
+}
+
+
+/*CARD*/
+.card-project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 22em;
+    width: 22em;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 15px;
+    padding: 0.5em;
+    background-color: whitesmoke;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /*transition: opacity 0.3s linear 2s;*/
+}
+
+.card-project h1 {
+    font-size: 1.9rem;
+    color: #2A9D8F;
+    font-family: 'Oswald', serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.card-project h2 {
+    font-size: 1.6em!important;
+    margin-bottom: 3px;
+}
+
+.card-project h3 {
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
+
+.card-project h4 {
+    font-size: 0.8rem;
+}
+
+.card-project p {
+    font-size: 0.9em!important;
+    margin-bottom: 0.1em;
+}
+
+.card-project a {
+    color: whitesmoke;
+}
+
+/*.card:hover {*/
+/*    transform: scale(1.1);*/
+/*    z-index: 2;*/
+/*}*/
+.card-project:hover .infos {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.card-project .infos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em 25px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 100%;
+    max-width: 22em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: 0.3s;
+}
+
+
+.card-project img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-project p {
+    font-size: 15px;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.tools-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin: 1em 0px;
+}
+
+.tools-logo img {
+    height: 30px;
+    width: 30px;
+    margin: 0px 3px;
+    box-shadow: none;
+}
+
+.github-logo img {
+    margin: 8px 0;
+    min-width: 0.8vw;
+    height: auto;
+}
+
+
+/*TARIFS*/
+.tarifs-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 18%;
+    height: auto;
+    /*padding-top: 7em;*/
+    flex-wrap: wrap;
+}
+
+.tarif-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 8px;
+    width: 100%;
+    height: 30em;
+    margin-bottom: 1.5em;
+    padding: 2em 1em 1em;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+}
+
+.tarif-card h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.tarif-card p {
+    font-size: 0.8em;
+}
+
+.tarif-card span {
+    font-size: 0.5em;
+}
+
+.contact-button {
+    width: 10em;
+    height: 3em;
+    border-radius: 7px;
+    margin-top: 4em;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: #E76F51;
+    font-weight: bold;
+}
+
+/*CONTACT*/
+.google-logo {
+    margin-top: 0.6em;
+}
+
+.google-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.1)!important;
+    border: none!important;
+    width: 50em;
+    height: 600px!important;
+}
+
+.form-container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+.form-container-input {
+    width: 100%!important;
+}
+
+.accordion-titles h4 {
+    color: #577590;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    height: 5em;
+    margin-top: 10px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+}
+
+/********************* MEDIA QUERIES *********************/
+
+@media screen and (max-width: 428px) {
+    .video-bg {
+        height: 200vh;
+    }
+
+    .navigation {
+        padding-top: 0.2em;
+        width: 100%;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+
+    .playground {
+        overflow: scroll;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .section1 h1,
+    .section2 h1,
+    .section3 h1,
+    .section4 h1 {
+        padding: 0.5em 0;
+    }
+
+    .speech {
+        width: 100%;
+        padding: 0 0.2em;
+    }
+    #creation-title, #technique-title {
+        display: none;
+    }
+    .logos-competences {
+        padding: 0.5em 0;
+        height: 3em;
+    }
+    .logo-container {
+        justify-content: center;
+    }
+    .logos-competences img {
+        max-height: 2.2em;
+        padding-left: 0.2em;
+    }
+
+    .tarifs-cards-container {
+        padding-top: 0;
+        width: 85%;
+    }
+
+    .form-container {
+        width: 95%;
+        height: auto!important;
+        padding: 1.5em 0;
+    }
+    .form-container-card {
+        width: 100%;
+    }
+    #obligatoire {
+        margin-top: 0.5em;
+    }
+    #sendButton {
+        margin-top: 1em;
+    }
+    .footer {
+        display: none;
+    }
 }

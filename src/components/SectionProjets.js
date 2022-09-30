@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from "./Navigation";
 import Playground from "./Playground";
 
-const Section2 = () => {
+const SectionProjets = () => {
     return (
         <div className="section2" id="section2">
             <Navigation/>
@@ -12,4 +12,4 @@ const Section2 = () => {
     );
 };
 
-export default Section2;
+export default SectionProjets;

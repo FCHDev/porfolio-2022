@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import SectionAccueil from "./components/SectionAccueil";
+import SectionProjets from "./components/SectionProjets";
+import SectionContact from "./components/SectionContact";
+import ScrollToTop from "react-scroll-to-top";
+import SectionTarifs from "./components/SectionTarifs";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <SectionAccueil/>
+            <SectionProjets/>
+            <SectionTarifs/>
+            <SectionContact/>
+
+            <ScrollToTop style={{paddingLeft: "6px"}} smooth={true}/>
+        </div>
+    );
 }
 
 export default App;

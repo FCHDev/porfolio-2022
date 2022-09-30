@@ -6,9 +6,10 @@ import appCountries from "../assets/img/app-countries-flag.png";
 import pizzaMama from "../assets/img/site-pizzamama.png";
 import sliderPhotos from "../assets/img/sliderPhotos.png";
 import multiLangues from "../assets/img/multi-languages.png";
-import maisonJungle from "../assets/img/maison-jungle.png";
+// import maisonJungle from "../assets/img/maison-jungle.png";
 import chrono from "../assets/img/chrono.png";
 import agency from "../assets/img/web-agency.png";
+import guitarists from "../assets/img/guitarists_.jpg";
 
 // LOGOS
 import html from "../assets/logos/html.png";
@@ -17,6 +18,7 @@ import js from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
 import python from "../assets/logos/python.png";
 import django from "../assets/logos/django.png";
+import firebase from "../assets/logos/firebase.svg";
 
 export const portfoliodb = [
   {
@@ -87,7 +89,7 @@ export const portfoliodb = [
     toolsLogo3: react,
     language: "Fr",
     description:
-      "Application permettant d'effectuer une recherche de pays par continents. Les pays sont triés par le nombre d'habitants, il est possible d'étendre l'affichage grâce au slider (à gauche de la navigation). Enfin, une section 'Blog' (liée à une API que j'ai réalisée) ainsi qu'une section 'À propos' sont également disponibles.",
+      "Application permettant d'effectuer une recherche de pays par continents. Les pays sont triés par le nombre d'habitants, possibilité d'étendre l'affichage grâce au slider (à gauche de la navigation). Enfin, une section 'Blog' (liée à une API que j'ai réalisée) ainsi qu'une section 'À propos' sont également disponibles.",
     api: "API utilisée : REST Countries",
     apiUrl: "https://restcountries.com/",
   },
@@ -140,22 +142,22 @@ export const portfoliodb = [
     description:
       "Simple fonctionnalité/composant 'multi-langues' pouvant être exporté dans n'importe quel projet React.",
   },
-  {
-    name: "Site e-commerce : La Maison Jungle",
-    author: "François Chevalier",
-    id: "05re",
-    type: "App",
-    year: "2022",
-    url: "http://maison-jungle.fch80.com/",
-    cover: maisonJungle,
-    tools: ["React-JS"],
-    toolsLogo: html,
-    toolsLogo2: css,
-    toolsLogo3: react,
-    language: "Fr",
-    description:
-      "Site marchand commercialisant des plantes. Gestion de panier dynamique et affichage par catégorie.",
-  },
+  // {
+  //   name: "Site e-commerce : La Maison Jungle",
+  //   author: "François Chevalier",
+  //   id: "05re",
+  //   type: "App",
+  //   year: "2022",
+  //   url: "http://maison-jungle.fch80.com/",
+  //   cover: maisonJungle,
+  //   tools: ["React-JS"],
+  //   toolsLogo: html,
+  //   toolsLogo2: css,
+  //   toolsLogo3: react,
+  //   language: "Fr",
+  //   description:
+  //     "Site marchand commercialisant des plantes. Gestion de panier dynamique et affichage par catégorie.",
+  // },
   {
     name: "App Chrono",
     author: "François Chevalier",
@@ -189,4 +191,23 @@ export const portfoliodb = [
     description:
       "Site vitrine d'une agence web fictive présentant : Navigation, Portfolio, Formulaire de contact. Animations et transitions (React Framer Motion)",
   },
+    {
+        name: "App guitarists_",
+        author: "François Chevalier",
+        id: "08re",
+        type: "Site",
+        year: "2022",
+        url: "https://guitarists.fch80.com/",
+        git: "https://github.com/FCHDev/guitarists-app",
+        cover: guitarists,
+        tools: ["React-JS"],
+        toolsLogo: react,
+        toolsLogo2: firebase,
+        language: "Fr",
+        description:
+            "Base de données francophone que j'ai réalisée et hébergée via Firebase. L'objectif est de donner accès à un catalogue croissant de guitaristes légendaires, et de proposer une visualisation de leur Bio en Fr. Le tout dans une interface simple et conviviale",
+        api: "API utilisée : Google Firebase",
+
+    },
+
 ];
