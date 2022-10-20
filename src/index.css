@@ -43,7 +43,7 @@ html {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #f1f1f1;
     transition: width 0.2s ease-in-out;
@@ -70,7 +70,7 @@ html {
     margin: 0;
 }
 
-.section1, .section2, .section3, .section4 {
+.section1, .section2, .section4 {
     min-height: 100vh;
     display: flex;
     justify-content: flex-start;
@@ -80,6 +80,19 @@ html {
     padding-top: 1em;
     position: relative;
     /*font-family: 'Merriweather', serif;*/
+    font-family: 'Open Sans', serif;
+    font-size: 1.2em;
+}
+
+.section3 {
+    min-height: 190vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 1em;
+    position: relative;
     font-family: 'Open Sans', serif;
     font-size: 1.2em;
 }
@@ -129,11 +142,19 @@ html {
     margin: 3em 0;
 }
 .speech p {
-    margin: 1em 0 2em 0;
+    margin: 1em 0 1.8em 0;
 }
 .speech h3 {
     font-family: 'Oswald', sans-serif;
     margin: 0;
+}
+
+.speech .whatiam-span {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logos-competences {
@@ -241,6 +262,10 @@ html {
     transform: scaleY(1);
 }
 
+.card-project:hover .infos a :hover {
+    font-weight: bold;
+}
+
 .card-project .infos {
     position: absolute;
     top: 0;
@@ -280,13 +305,13 @@ html {
     justify-content: center;
     align-items: center;
     width: 280px;
-    margin: 1em 0px;
+    margin: 1em 0;
 }
 
 .tools-logo img {
     height: 30px;
     width: 30px;
-    margin: 0px 3px;
+    margin: 0 3px;
     box-shadow: none;
 }
 
@@ -303,7 +328,7 @@ html {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 18%;
+    width: 25%;
     height: auto;
     /*padding-top: 7em;*/
     flex-wrap: wrap;
@@ -369,13 +394,13 @@ html {
 
 .form-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: rgba(0,0,0,0.1)!important;
     border: none!important;
     width: 50em;
-    height: 600px!important;
+    height: 650px!important;
 }
 
 .form-container-card {
@@ -411,6 +436,18 @@ html {
 
 /********************* MEDIA QUERIES *********************/
 
+@media screen and (max-width: 820px) {
+    .tarifs-cards-container {
+        padding-top: 0;
+        width: 50%;
+    }
+    .form-container {
+        width: 80%;
+        height: auto!important;
+        padding: 1.5em 0;
+    }
+}
+
 @media screen and (max-width: 428px) {
     .video-bg {
         height: 200vh;
@@ -429,7 +466,6 @@ html {
         font-weight: normal;
     }
 
-
     .playground {
         overflow: scroll;
     }
@@ -437,6 +473,9 @@ html {
     .navigation {
         width: 100%;
         justify-content: space-around;
+    }
+    .section1 {
+        padding: 0 10px;
     }
     .section1 h1,
     .section2 h1,
@@ -447,7 +486,7 @@ html {
 
     .speech {
         width: 100%;
-        padding: 0 0.2em;
+        padding: 0 5px;
     }
     #creation-title, #technique-title {
         display: none;
@@ -487,3 +526,5 @@ html {
         display: none;
     }
 }
+
+

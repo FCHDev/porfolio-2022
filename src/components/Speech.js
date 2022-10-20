@@ -1,12 +1,15 @@
 import React from 'react';
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import WebIcon from '@mui/icons-material/Web';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import {Accordion, AccordionDetails, AccordionSummary} from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
 import js from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
-import python from "../assets/logos/python.png";
 import firebase from "../assets/logos/firebase.svg";
 import next from "../assets/logos/next-js.svg";
 import mui from "../assets/logos/mui.png";
@@ -18,24 +21,60 @@ import affinitydesigner from "../assets/logos/affinitydesigner.png";
 const Speech = () => {
     return (
         <div className="speech">
-            <h2>Parcours</h2>
-            <p>Je suis développeur web Front-End spécialisé sur le langage de programmation <strong>React</strong> un
-                langage qui permettra à votre projet d'être extrêmement rapide, et facilement maintenable. </p>
-            <p>Front-End signifie que le développeur se focalise exclusivement sur la partie visible de l'iceberg,
-                autrement dit la partie visible sur les écrans de navigation, c'est d'ailleurs sur ce front, que je suis
-                le meilleur... Un projet web a deux dimensions le Front-End que l'on vient de voir et le back-End (la
-                partie données & serveur) pour simplifier c'est notre partie obscure de la force...) </p>
-            <p>De manière très générale, je suis le bon partenaire pour créer tous types de projets web, que ce soit la
-                simple création d'un site internet à l'application web, cependant mon domaine de compétences encadre des
-                projets se voulant "sur mesure" "connectés a d'autres services (API)", mais surtout "à la pointe de la
-                technologie".</p>
 
-            <h2>Technos</h2>
+            <h2>Parcours</h2>
+            <p style={{marginBottom: "1vh"}}>Après plus d’une dizaine d’années à évoluer dans des fonctions Sales et managériales au sein de grands
+                groupes, je suis aujourd’hui développeur front end indépendant.<br/>
+                Je mets à profit cette expérience afin de conseiller et d’accompagner au mieux mes clients, aussi bien
+                techniquement, que sur une approche métier plus globale.</p>
+
+            <Accordion style={{borderRadius: "10px", backgroundColor: "transparent", color: "white"}}>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon style={{color:"white"}}/>}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    style={{paddingLeft:"0", marginBottom: "3vh"}}
+                >
+                        En savoir plus...
+                </AccordionSummary>
+                <AccordionDetails>
+                    <p><span className="whatiam-span">Ce que je fais <WebIcon fontSize={"large"}/></span><br/>
+                        J’ai choisi ReactJS/TS pour sa souplesse, sa robustesse et pour sa très vaste communauté de
+                        développeuses et développeurs.<br/>
+                        Autodidacte dans l’âme, je maîtrise aujourd’hui une stack technique moderne (cf ci-dessous) me
+                        permettant de pouvoir réaliser en toute autonomie, les projets de sites ou d’applications web que vous
+                        envisagez.<br/>
+                        Bien que n’étant pas Designer, j’accorde une attention toute particulière à l’interface graphique (UI)
+                        et à l’expérience utilisateur (UX) y étant associée. </p>
+
+                    <p><span className="whatiam-span">Ce que je suis <PsychologyIcon fontSize={"large"}/></span><br/>
+                        <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
+                        « <strong>Solutionniste</strong> » <span style={{fontStyle: "italic"}}>(subst. et adj. (Celui, celle) qui cherche systématiquement une, des solution(s) Source: CNRS).</span> :
+                        j’aime appréhender des problèmes et découvrir/rechercher leurs solutions, c’est ma plus grande source de
+                        motivation.<br/>
+
+                        <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
+                        <strong>Curieux</strong> : j’aime comprendre les sujets en profondeur pour me les approprier, les
+                        partager, et les utiliser à bon escient.<br/>
+
+                        <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
+                        <strong>Bon communiquant</strong> : je me mets aisément à la place de mon interlocuteur, ce qui me
+                        permet de m’aligner rapidement avec lui/elle et de m’adapter à beaucoup de situations. Mieux vaut trop
+                        communiquer que pas assez.<br/>
+
+                        <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
+                        <strong>Enjoué</strong> : je vois le vie de manière très positive et toujours avec le sourire.</p>
+                </AccordionDetails>
+            </Accordion>
+
+
+
+            <h2 style={{marginTop:"3vh"}}>Technos</h2>
             <p>Ci-dessous, la stack technique que je maitrise. On peut la diviser en 2 catégories : </p>
 
             <ul>
-                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie technique</b>* : HTML/CSS/JS, React (coeur du
-                    réacteur 😃), NextJS, Goggle Firebase (pour la gestion du back)... quelques notions Python
+                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie technique</b>* : HTML/CSS/JS, React,
+                    NextJS, Goggle Firebase (pour la gestion du back)... quelques notions Python
                 </li>
             </ul>
             <div className="logos-competences">
@@ -80,15 +119,11 @@ const Speech = () => {
                         <img src={firebase} alt="Firebase"/>
                     </a>
                     {/*eslint-disable-next-line*/}
-                    <a href="https://docs.python.org/fr/3/"
-                       target="_blank"
-                       rel="noopener">
-                        <img src={python} alt="Python"/>
-                    </a>
                 </div>
             </div>
             <ul style={{marginTop: "2em"}}>
-                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie conception/création</b>* : TailwindCSS, MUI
+                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie conception/création</b>* :
+                    TailwindCSS, MUI
                     (ex-Material UI), Affinity Photo et Affinity Designer
                 </li>
             </ul>

@@ -86,7 +86,7 @@ const ContactForm = () => {
                 <Card.Body className="form-container-card">
                     <Form className="text-black d-flex flex-column align-items-center form-container-input" ref={formRef} onSubmit={sendEmail}>
                         <Accordion className="w-100">
-                            <Accordion.Item eventKey="0">
+                            <Accordion.Item eventKey="0" >
                                 <Accordion.Header className="accordion-titles"><h4>1 - Coordonnées</h4></Accordion.Header>
                                 <Accordion.Body className="text-black bg-opacity-25">
 
@@ -174,6 +174,47 @@ const ContactForm = () => {
                                             label="WhatsApp, autres..."
                                             onChange={handleChange}
                                             value={toSend.contact_pref = "WhatsApp, autres..."}
+                                        />
+                                    </Form.Group>
+                                    {/*// SOCIÉTÉ OU PARTICULIER ?*/}
+                                    <Form.Group id="pro_or_not" className="mb-2">
+                                        <Form.Label className="mb-1 mt-3"><b>Vous êtes une/un...</b></Form.Label>
+                                        <Form.Check
+                                            type="radio"
+                                            id="pro_or_not"
+                                            name="pro_or_not"
+                                            label="Société"
+                                            onChange={handleChange}
+                                            value={toSend.pro_or_not = "Société"}
+                                        />
+                                        <Form.Check
+                                            type="radio"
+                                            id="pro_or_not"
+                                            name="pro_or_not"
+                                            label="Particulier"
+                                            onChange={handleChange}
+                                            value={toSend.pro_or_not = "Particulier"}
+                                        />
+                                    </Form.Group>
+
+                                    {/*// DÉCISIONNAIRE ?*/}
+                                    <Form.Group id="decider" className="mb-2">
+                                        <Form.Label className="mb-1 mt-3"><b>Êtes-vous décisionnaire ?</b><span style={{color:"red"}}>*</span></Form.Label>
+                                        <Form.Check
+                                            type="radio"
+                                            id="decider"
+                                            name="decider"
+                                            label="Oui"
+                                            onChange={handleChange}
+                                            value={toSend.decider = "Oui 🥳"}
+                                            required/>
+                                        <Form.Check
+                                            type="radio"
+                                            id="decider"
+                                            name="decider"
+                                            label="Non"
+                                            onChange={handleChange}
+                                            value={toSend.decider = "Non 😢"}
                                         />
                                     </Form.Group>
 
@@ -323,54 +364,7 @@ const ContactForm = () => {
 
                                 </Accordion.Body>
                             </Accordion.Item>
-                            <Accordion.Item eventKey="3">
-                                <Accordion.Header className="accordion-titles"><h4>"Ah oui, j'oubliais..."</h4></Accordion.Header>
-                                <Accordion.Body className="text-black bg-opacity-25">
 
-                                    {/*// SOCIÉTÉ OU PARTICULIER ?*/}
-                                    <Form.Group id="pro_or_not" className="mb-2">
-                                        <Form.Label className="mb-1 mt-3"><b>Vous êtes une/un...</b></Form.Label>
-                                        <Form.Check
-                                            type="radio"
-                                            id="pro_or_not"
-                                            name="pro_or_not"
-                                            label="Société"
-                                            onChange={handleChange}
-                                            value={toSend.pro_or_not = "Société"}
-                                        />
-                                        <Form.Check
-                                            type="radio"
-                                            id="pro_or_not"
-                                            name="pro_or_not"
-                                            label="Particulier"
-                                            onChange={handleChange}
-                                            value={toSend.pro_or_not = "Particulier"}
-                                        />
-                                    </Form.Group>
-
-                                    {/*// DÉCISIONNAIRE ?*/}
-                                    <Form.Group id="decider" className="mb-2">
-                                        <Form.Label className="mb-1 mt-3"><b>Êtes-vous décisionnaire ?</b><span style={{color:"red"}}>*</span></Form.Label>
-                                        <Form.Check
-                                            type="radio"
-                                            id="decider"
-                                            name="decider"
-                                            label="Oui"
-                                            onChange={handleChange}
-                                            value={toSend.decider = "Oui 🥳"}
-                                            required/>
-                                        <Form.Check
-                                            type="radio"
-                                            id="decider"
-                                            name="decider"
-                                            label="Non"
-                                            onChange={handleChange}
-                                            value={toSend.decider = "Non 😢"}
-                                        />
-                                    </Form.Group>
-
-                                </Accordion.Body>
-                            </Accordion.Item>
                         </Accordion>
 
                         <span className="text-white" id="obligatoire"><small><em>*Champ obligatoire</em></small></span>

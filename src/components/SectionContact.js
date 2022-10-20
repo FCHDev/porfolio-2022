@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from "./Navigation";
 import ContactForm from "./ContactForm";
-import Footer from "./Footer";
 
 
 const SectionContact = () => {
@@ -21,7 +20,6 @@ const SectionContact = () => {
                 {/*    src="https://docs.google.com/forms/d/e/1FAIpQLScmbrTqVCFrqaZpyDa8w5RtwhF7bW01F-kRxJh9gTiVkLCxaQ/viewform?embedded=true"*/}
                 {/*    width="90%" height="1556" frameBorder="0" marginHeight="0" marginWidth="0" title="Formulaire de contact">Chargement…*/}
                 {/*</iframe>*/}
-                <Footer/>
             </div>
             </>
     );
