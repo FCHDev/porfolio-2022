@@ -2,11 +2,10 @@
 import appMeteo from "../assets/img/app-meteo.png";
 import appCooking from "../assets/img/mockup_cooking.png";
 import siteBali from "../assets/img/mockup_bali.png";
-import appCountries from "../assets/img/app-countries-flag.png";
+import appCountries from "../assets/img/mockup_countries.png";
 import pizzaMama from "../assets/img/site-pizzamama.png";
 import sliderPhotos from "../assets/img/sliderPhotos.png";
 import multiLangues from "../assets/img/multi-languages.png";
-// import maisonJungle from "../assets/img/maison-jungle.png";
 import chrono from "../assets/img/chrono.png";
 import agency from "../assets/img/mockup_webagency.png";
 import guitarists from "../assets/img/mockup_guitarists.png";
