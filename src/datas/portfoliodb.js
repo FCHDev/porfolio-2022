@@ -216,7 +216,7 @@ export const portfoliodb = [
         id: "01",
         type: "Site",
         year: "2022",
-        url: "https://guitarists.fch80.com/",
+        url: "https://guitarists-db.netlify.app/",
         git: "https://github.com/FCHDev/guitarists-app",
         cover: guitarists,
         tools: ["React-JS"],
