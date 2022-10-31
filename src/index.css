@@ -21,6 +21,7 @@ html {
 
 .navigation {
     padding-top: 1em;
+    margin-bottom: 8vh;
     width: 60%;
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +57,7 @@ html {
 }
 
 .profil-pic {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .profil-pic img {
@@ -96,20 +97,22 @@ html {
     font-size: 1.2em;
 }
 
-.section1 h1,
-.section2 h1,
-.section3 h1,
-.section4 h1 {
+.section1 h1 {
     font-size: 2.8em;
     padding: 1.3em 0;
     font-family: 'Oswald', sans-serif;
 }
 
-.section1 h2,
 .section2 h2,
-.section3 h2,
 .section4 h2 {
-    font-size: 1.5em;
+    font-size: 2.6em;
+    padding-bottom: 1.3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section3 h2 {
+    font-size: 2.6em;
+    padding: 0.5vh 0;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -246,16 +249,15 @@ html {
 .card-project p {
     font-size: 0.9em!important;
     margin-bottom: 0.1em;
+    text-align: justify;
+    white-space: pre-wrap;
+    line-height: normal;
 }
 
 .card-project a {
     color: whitesmoke;
 }
 
-/*.card:hover {*/
-/*    transform: scale(1.1);*/
-/*    z-index: 2;*/
-/*}*/
 .card-project:hover .infos {
     opacity: 1;
     transform: scaleY(1);
@@ -292,11 +294,6 @@ html {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.card-project p {
-    font-size: 15px;
-    text-align: justify;
-    white-space: pre-wrap;
-}
 
 .tools-logo {
     display: flex;
@@ -415,6 +412,7 @@ html {
 .accordion-titles h4 {
     color: #577590;
     font-weight: bold;
+    padding: 0;
 }
 
 /*FOOTER*/
@@ -499,6 +497,17 @@ html {
     .logos-competences img {
         max-height: 2.2em;
         padding-left: 0.2em;
+    }
+
+    .card-project h2 {
+        font-size: 1.3em!important;
+        margin-bottom: 3px;
+    }
+    .card-project p {
+        font-size: 0.8em!important;
+        text-align: center;
+        white-space: pre-wrap;
+        line-height: 1.2rem;
     }
 
     .tarifs-cards-container {

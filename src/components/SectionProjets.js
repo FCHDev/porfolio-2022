@@ -6,7 +6,7 @@ const SectionProjets = () => {
     return (
         <div className="section2" id="section2">
             <Navigation/>
-            <h1>Projets</h1>
+            <h2>Projets</h2>
             <Playground />
         </div>
     );

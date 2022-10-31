@@ -7,7 +7,7 @@ const SectionContact = () => {
     return (<>
             <div className="section3" id="section3">
                 <Navigation/>
-                <h1>Contact</h1>
+                <h2>Contact</h2>
                 <h3 style={{fontFamily: "Open Sans", marginBottom: "1em"}}>Remplissez le formulaire ci-dessous</h3>
 
                 <ContactForm/>

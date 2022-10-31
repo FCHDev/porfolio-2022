@@ -22,7 +22,7 @@ const Speech = () => {
     return (
         <div className="speech">
 
-            <h2>Parcours</h2>
+            <h2 style={{fontWeight: "bold"}}>Parcours</h2>
             <p style={{marginBottom: "1vh"}}>Après plus d’une dizaine d’années à évoluer dans des fonctions Sales et managériales au sein de grands
                 groupes, je suis aujourd’hui développeur front end indépendant.<br/>
                 Je mets à profit cette expérience afin de conseiller et d’accompagner au mieux mes clients, aussi bien
@@ -69,7 +69,7 @@ const Speech = () => {
 
 
 
-            <h2 style={{marginTop:"3vh"}}>Technos</h2>
+            <h2 style={{marginTop:"3vh", fontWeight: "bold"}}>Technos</h2>
             <p>Ci-dessous, la stack technique que je maitrise : </p>
 
             <ul>

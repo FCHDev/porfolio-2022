@@ -7,7 +7,7 @@ const SectionTarifs = () => {
     return (
         <div className="section4" id="section4">
             <Navigation/>
-            <h1>Tarifs</h1>
+            <h2>Tarifs</h2>
             <div className="tarifs-cards-container">
 
                 <CardTarif/>
