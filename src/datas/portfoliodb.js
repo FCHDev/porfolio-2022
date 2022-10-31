@@ -1,5 +1,4 @@
 //COVERS
-import appMeteo from "../assets/img/app-meteo.png";
 import appCooking from "../assets/img/mockup_cooking.png";
 import siteBali from "../assets/img/mockup_bali.png";
 import appCountries from "../assets/img/mockup_countries.png";
@@ -14,31 +13,14 @@ import dailygreen from "../assets/img/mockup_dailygreen.png";
 // LOGOS
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
-import js from "../assets/logos/javascript.png";
+// import js from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
+import typescript from "../assets/logos/typescript.svg";
 import python from "../assets/logos/python.png";
 import django from "../assets/logos/django.png";
 import firebase from "../assets/logos/firebase-icon.svg";
 
 export const portfoliodb = [
-    {
-        name: "App Météo",
-        author: "François Chevalier",
-        id: "07",
-        type: "App",
-        year: "2021",
-        url: "https://weatherapp.fch80.com/",
-        cover: appMeteo,
-        tools: ["HTML-CSS", "JS"],
-        toolsLogo: html,
-        toolsLogo2: css,
-        toolsLogo3: js,
-        language: "Fr",
-        description:
-            "Widget Météo géolocalisé permettant de connaitre le temps, la température et la localisation en temps réel. Il affiche également les températures à venir pour les 7 prochaines heures, ainsi que celles des 7 jours à venir.",
-        api: "API utilisée : OpenWeatherMap",
-        apiUrl: "https://openweathermap.org/",
-    },
     {
         name: "App Cooking",
         author: "François Chevalier",
@@ -202,10 +184,11 @@ export const portfoliodb = [
         cover: dailygreen,
         tools: ["React-JS"],
         toolsLogo: react,
-        toolsLogo2: firebase,
+        toolsLogo2: typescript,
+        toolsLogo3: firebase,
         language: "Fr",
         description:
-            "Site e-commerce mettant en vente des produits bio et respectueux de l'environnement",
+            "Site e-commerce mettant en vente des produits bio et respectueux de l'environnement.",
         api: "API utilisée : Google Firebase",
 
     },
