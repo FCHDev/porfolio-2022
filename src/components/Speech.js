@@ -63,7 +63,7 @@ const Speech = () => {
                         communiquer que pas assez.<br/>
 
                         <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
-                        <strong>Enjoué</strong> : je vois le vie de manière très positive et toujours avec le sourire.</p>
+                        <strong>Enjoué</strong> : je vois la vie de manière très positive et toujours avec le sourire.</p>
                 </AccordionDetails>
             </Accordion>
 
