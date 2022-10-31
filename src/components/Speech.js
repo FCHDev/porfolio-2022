@@ -33,12 +33,12 @@ const Speech = () => {
                     expandIcon={<ExpandMoreIcon style={{color:"white"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    style={{paddingLeft:"0", marginBottom: "3vh"}}
+                    style={{paddingLeft:"0", marginBottom: "3vh", fontWeight: "bold", color: "#f7ce03"}}
                 >
                         En savoir plus...
                 </AccordionSummary>
                 <AccordionDetails>
-                    <p><span className="whatiam-span">Ce que je fais <WebIcon fontSize={"large"}/></span><br/>
+                    <p><span className="whatiam-span">Ce que je fais <WebIcon fontSize={"large"} style={{color: "#f7ce03"}}/></span><br/>
                         J’ai choisi ReactJS/TS pour sa souplesse, sa robustesse et pour sa très vaste communauté de
                         développeuses et développeurs.<br/>
                         Autodidacte dans l’âme, je maîtrise aujourd’hui une stack technique moderne (cf ci-dessous) me
@@ -47,7 +47,7 @@ const Speech = () => {
                         Bien que n’étant pas Designer, j’accorde une attention toute particulière à l’interface graphique (UI)
                         et à l’expérience utilisateur (UX) y étant associée. </p>
 
-                    <p><span className="whatiam-span">Ce que je suis <PsychologyIcon fontSize={"large"}/></span><br/>
+                    <p><span className="whatiam-span">Ce que je suis <PsychologyIcon fontSize={"large"} style={{color: "#f7ce03"}}/></span><br/>
                         <ArrowForwardIosIcon style={{paddingBottom: "4px"}}/>
                         « <strong>Solutionniste</strong> » <span style={{fontStyle: "italic"}}>(subst. et adj. (Celui, celle) qui cherche systématiquement une, des solution(s) Source: CNRS).</span> :
                         j’aime appréhender des problèmes et découvrir/rechercher leurs solutions, c’est ma plus grande source de
@@ -70,10 +70,10 @@ const Speech = () => {
 
 
             <h2 style={{marginTop:"3vh"}}>Technos</h2>
-            <p>Ci-dessous, la stack technique que je maitrise. On peut la diviser en 2 catégories : </p>
+            <p>Ci-dessous, la stack technique que je maitrise : </p>
 
             <ul>
-                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie technique</b>* : HTML/CSS/JS, React,
+                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Stack technique</b>* : HTML/CSS/JS, React,
                     NextJS, Goggle Firebase (pour la gestion du back)... quelques notions Python
                 </li>
             </ul>
@@ -122,7 +122,7 @@ const Speech = () => {
                 </div>
             </div>
             <ul style={{marginTop: "2em"}}>
-                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Partie conception/création</b>* :
+                <li><ArrowForwardIosIcon style={{paddingBottom: "4px"}}/><b>Stack créative</b>* :
                     TailwindCSS, MUI
                     (ex-Material UI), Affinity Photo et Affinity Designer
                 </li>

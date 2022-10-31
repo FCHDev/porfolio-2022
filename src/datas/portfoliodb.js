@@ -5,7 +5,7 @@ import appCountries from "../assets/img/mockup_countries.png";
 import pizzaMama from "../assets/img/site-pizzamama.png";
 import sliderPhotos from "../assets/img/sliderPhotos.png";
 import multiLangues from "../assets/img/multi-languages.png";
-import chrono from "../assets/img/chrono.png";
+import chrono from "../assets/img/mockup_chrono.png";
 import agency from "../assets/img/mockup_webagency.png";
 import guitarists from "../assets/img/mockup_guitarists.png";
 import dailygreen from "../assets/img/mockup_dailygreen.png";
@@ -27,7 +27,7 @@ export const portfoliodb = [
         id: "03",
         type: "App",
         year: "2022",
-        url: "http://cooking-app.fch80.com/",
+        url: "https://worlds-cooking.netlify.app/",
         cover: appCooking,
         tools: ["React-JS"],
         toolsLogo: html,
@@ -45,7 +45,7 @@ export const portfoliodb = [
         id: "05",
         type: "Site",
         year: "2022",
-        url: "http://site-bali.fch80.com/",
+        url: "https://go-to-bali.netlify.app/",
         git: "https://github.com/FCHDev/site-bali",
         cover: siteBali,
         tools: ["HTML-CSS"],
@@ -62,7 +62,7 @@ export const portfoliodb = [
         id: "06",
         type: "App",
         year: "2022",
-        url: "http://countries-flags-app.fch80.com/",
+        url: "https://countries-watcher.netlify.app/",
         git: "https://github.com/FCHDev/countries-watcher",
         cover: appCountries,
         tools: ["React-JS"],
@@ -143,10 +143,10 @@ export const portfoliodb = [
     {
         name: "App Chrono",
         author: "François Chevalier",
-        id: "33",
+        id: "07",
         type: "App",
         year: "2022",
-        url: "http://chrono-react.fch80.com/",
+        url: "https://very-simple-pomodoro-app.netlify.app/",
         cover: chrono,
         tools: ["React-JS"],
         toolsLogo: html,
@@ -162,7 +162,7 @@ export const portfoliodb = [
         id: "02",
         type: "Site",
         year: "2022",
-        url: "http://web-agency.fch80.com/",
+        url: "https://fch-agency.netlify.app/",
         git: "https://github.com/FCHDev/web-agency",
         cover: agency,
         tools: ["React-JS"],
@@ -179,7 +179,7 @@ export const portfoliodb = [
         id: "00",
         type: "Site",
         year: "2022",
-        url: "https://mygreenshop.netlify.app/",
+        url: "https://dailygreen.netlify.app/",
         git: "https://github.com/FCHDev/my-green-shop",
         cover: dailygreen,
         tools: ["React-JS"],
