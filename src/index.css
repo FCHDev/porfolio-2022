@@ -210,7 +210,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 22em;
+    height: 18.8em;
     width: 22em;
     border-radius: 10px;
     transition: 0.3s;
@@ -228,7 +228,7 @@ html {
     font-family: 'Oswald', serif;
     font-weight: bold;
     margin: 0;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .card-project h2 {
@@ -286,10 +286,9 @@ html {
     transition: 0.3s;
 }
 
-
 .card-project img {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 400px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

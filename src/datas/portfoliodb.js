@@ -1,16 +1,16 @@
 //COVERS
 import appMeteo from "../assets/img/app-meteo.png";
-import appCooking from "../assets/img/app-cooking.png";
-import siteBali from "../assets/img/site-bali.png";
+import appCooking from "../assets/img/mockup_cooking.png";
+import siteBali from "../assets/img/mockup_bali.png";
 import appCountries from "../assets/img/app-countries-flag.png";
 import pizzaMama from "../assets/img/site-pizzamama.png";
 import sliderPhotos from "../assets/img/sliderPhotos.png";
 import multiLangues from "../assets/img/multi-languages.png";
 // import maisonJungle from "../assets/img/maison-jungle.png";
 import chrono from "../assets/img/chrono.png";
-import agency from "../assets/img/web-agency.png";
-import guitarists from "../assets/img/guitarists_.jpg";
-import dailygreen from "../assets/img/dailygreen.jpg";
+import agency from "../assets/img/mockup_webagency.png";
+import guitarists from "../assets/img/mockup_guitarists.png";
+import dailygreen from "../assets/img/mockup_dailygreen.png";
 
 // LOGOS
 import html from "../assets/logos/html.png";
@@ -19,13 +19,13 @@ import js from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
 import python from "../assets/logos/python.png";
 import django from "../assets/logos/django.png";
-import firebase from "../assets/logos/firebase.svg";
+import firebase from "../assets/logos/firebase-icon.svg";
 
 export const portfoliodb = [
     {
         name: "App Météo",
         author: "François Chevalier",
-        id: "04",
+        id: "07",
         type: "App",
         year: "2021",
         url: "https://weatherapp.fch80.com/",
@@ -90,7 +90,7 @@ export const portfoliodb = [
         toolsLogo3: react,
         language: "Fr",
         description:
-            "Application permettant d'effectuer une recherche de pays par continents. Les pays sont triés par le nombre d'habitants, possibilité d'étendre l'affichage grâce au slider (à gauche de la navigation). Enfin, une section 'Blog' (liée à une API que j'ai réalisée) ainsi qu'une section 'À propos' sont également disponibles.",
+            "Application permettant d'effectuer une recherche de pays par continents. Les pays sont triés par le nombre d'habitants, possibilité d'étendre l'affichage grâce au slider. Enfin, une section 'Blog' (liée à une API que j'ai réalisée) est disponible.",
         api: "API utilisée : REST Countries",
         apiUrl: "https://restcountries.com/",
     },
