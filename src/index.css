@@ -173,6 +173,19 @@ html {
     padding-left: 2em;
 }
 
+
+.logos-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin-top: 8px;
+}
+.logos-social img {
+    height: 35px;
+    width: auto;
+}
+
 .logo-container {
     height: auto;
     width: 100%;
@@ -418,14 +431,15 @@ html {
 /*FOOTER*/
 .footer {
     width: 100%;
-    height: 5em;
+    height: 7em;
     margin-top: 10px;
     background: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    flex-direction: column;
+    font-size: 0.9em;
     position: absolute;
     bottom: 0;
 }
@@ -491,9 +505,9 @@ html {
         padding: 0.5em 0;
         height: 3em;
     }
-    .logo-container {
-        justify-content: center;
-    }
+    /*.logo-container {*/
+    /*    justify-content: center;*/
+    /*}*/
     .logos-competences img {
         max-height: 2.2em;
         padding-left: 0.2em;

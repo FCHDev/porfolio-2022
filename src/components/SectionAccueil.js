@@ -2,7 +2,9 @@ import React from 'react';
 import Navigation from "./Navigation";
 import Speech from "./Speech";
 import PP from "./PP";
+
 import network from "../assets/vid/Network.mp4"
+import SocialLogos from "./SocialLogos";
 
 
 const SectionAccueil = () => {
@@ -11,8 +13,10 @@ const SectionAccueil = () => {
             <video src={network} autoPlay muted loop className="video-bg"/>
             <Navigation/>
             <PP/>
-            <h1 className="fs-1 my-0 py-3">François Chevalier</h1>
-            <span id="profile-title"><em>Développeur Front End React JS</em></span>
+            <h1 className="fs-1 my-0 pt-3 pb-1">François Chevalier</h1>
+            <span className="mt-0">🇫🇷 🇬🇧</span>
+            <span id="profile-title"><em>Développeur Front End ReactJS</em></span>
+            <SocialLogos />
             <Speech/>
         </div>
     );
