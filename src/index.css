@@ -117,7 +117,8 @@ html {
 }
 
 .section1 {
-    background: linear-gradient(180deg, rgba(9,9,9,0.15172006302521013) 0%, rgba(2, 2, 2, 1) 35%);
+    background: black;
+    /*background: linear-gradient(180deg, rgba(9,9,9,0.15172006302521013) 0%, rgba(2, 2, 2, 1) 35%);*/
 }
 
 .section2 {
