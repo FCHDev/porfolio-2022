@@ -16,7 +16,7 @@ const SectionAccueil = () => {
             <h1 className="fs-1 my-0 pt-3 pb-1">François Chevalier</h1>
             <span className="mt-0">🇫🇷 🇬🇧</span>
             <span id="profile-title"><em>Développeur Front End ReactJS</em></span>
-            <SocialLogos />
+            <SocialLogos/>
             <Speech/>
         </div>
     );

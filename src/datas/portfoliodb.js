@@ -2,7 +2,7 @@
 import appCooking from "../assets/img/mockup_cooking.png";
 import siteBali from "../assets/img/mockup_bali.png";
 import appCountries from "../assets/img/mockup_countries.png";
-import pizzaMama from "../assets/img/site-pizzamama.png";
+// import pizzaMama from "../assets/img/site-pizzamama.png";
 import sliderPhotos from "../assets/img/sliderPhotos.png";
 import multiLangues from "../assets/img/multi-languages.png";
 import chrono from "../assets/img/mockup_chrono.png";
@@ -16,8 +16,8 @@ import css from "../assets/logos/css.png";
 // import js from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
 import typescript from "../assets/logos/typescript.svg";
-import python from "../assets/logos/python.png";
-import django from "../assets/logos/django.png";
+// import python from "../assets/logos/python.png";
+// import django from "../assets/logos/django.png";
 import firebase from "../assets/logos/firebase-icon.svg";
 
 export const portfoliodb = [
@@ -75,23 +75,23 @@ export const portfoliodb = [
         api: "API utilisée : REST Countries",
         apiUrl: "https://restcountries.com/",
     },
-    {
-        name: "Site Pizza Mama",
-        author: "François Chevalier",
-        id: "30",
-        type: "Site",
-        year: "2022",
-        url: "https://fchpizzamamadjango.herokuapp.com/",
-        cover: pizzaMama,
-        tools: ["PYTHON", "DJANGO"],
-        toolsLogo: html,
-        toolsLogo2: css,
-        toolsLogo3: python,
-        toolsLogo4: django,
-        language: "Fr",
-        description:
-            "Site de pizzeria présentant sa carte. Le site a été réalisé en Python/Django et peut donc être facilement administré (ajout ou suppression de pizzas, modification des recettes, ...).",
-    },
+    // {
+    //     name: "Site Pizza Mama",
+    //     author: "François Chevalier",
+    //     id: "30",
+    //     type: "Site",
+    //     year: "2022",
+    //     url: "https://fchpizzamamadjango.herokuapp.com/",
+    //     cover: pizzaMama,
+    //     tools: ["PYTHON", "DJANGO"],
+    //     toolsLogo: html,
+    //     toolsLogo2: css,
+    //     toolsLogo3: python,
+    //     toolsLogo4: django,
+    //     language: "Fr",
+    //     description:
+    //         "Site de pizzeria présentant sa carte. Le site a été réalisé en Python/Django et peut donc être facilement administré (ajout ou suppression de pizzas, modification des recettes, ...).",
+    // },
     {
         name: "Feature : Slider Photos",
         author: "François Chevalier",
