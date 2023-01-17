@@ -1,7 +1,7 @@
 import React from "react";
 import linkedIn from "../assets/logos/linkedin.svg";
 import malt from "../assets/logos/malt.svg";
-import twitter from "../assets/logos/twitter.svg";
+// import twitter from "../assets/logos/twitter.svg";
 
 const SocialLogos = () => {
   return (
